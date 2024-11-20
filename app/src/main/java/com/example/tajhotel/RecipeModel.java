@@ -2,11 +2,13 @@ package com.example.tajhotel;
 
 public class RecipeModel {
     int pic ;
-    String text;
+    String button;
 
-    public RecipeModel(String text, int pic) {
-        this.text = text;
+
+    public RecipeModel(int pic , String button) {
+        this.button = button;
         this.pic = pic;
+
     }
 
     public int getPic() {
@@ -17,11 +19,14 @@ public class RecipeModel {
         this.pic = pic;
     }
 
-    public String getText() {
-        return text;
+    public String getButton() {
+        return button;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setButton(String button) {
+        this.button = button;
+    }
+    public String getButtonText() {
+        return button;
     }
 }
